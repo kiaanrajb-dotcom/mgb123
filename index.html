@@ -1,0 +1,949 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mohanlal Ghewarchand Bhandari — A Legacy of Leadership & Purpose</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+/* ── TOKENS ── */
+:root {
+  --charcoal:#1a1a1a; --graphite:#2d2d2d; --graphite-mid:#3d3d3d;
+  --ivory:#f5f1eb; --ivory-warm:#ede8df; --ivory-mid:#e8e2d8;
+  --bronze:#8b6914; --navy:#1c2b3a; --navy-mid:#243447;
+  --beige:#c9c0b0; --beige-light:#ddd6c8;
+  --gold:#c9a84c; --gold-light:#e2c97e;
+  --text-mid:#4a4a4a; --text-light:#7a7a7a;
+  --serif:'Cormorant Garamond',Georgia,serif;
+  --sans:'Jost',-apple-system,sans-serif;
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:var(--sans);background:var(--ivory);color:var(--charcoal);line-height:1.7;overflow-x:hidden}
+img{max-width:100%;display:block}
+
+/* ── NAV ── */
+nav{
+  position:fixed;top:0;left:0;right:0;z-index:1000;
+  height:72px;padding:0 clamp(1.5rem,4vw,4rem);
+  display:flex;align-items:center;justify-content:space-between;
+  background:rgba(26,26,26,0.97);backdrop-filter:blur(12px);
+  border-bottom:1px solid rgba(200,168,76,0.15);
+}
+.nav-brand{
+  font-family:var(--serif);font-weight:500;font-size:1.1rem;
+  letter-spacing:0.18em;color:var(--gold-light);text-transform:uppercase;text-decoration:none;
+  white-space:nowrap;
+}
+.nav-brand span{color:var(--beige);font-weight:300}
+.nav-links{display:flex;gap:clamp(1rem,2vw,2.2rem);list-style:none}
+.nav-links a{
+  font-size:0.7rem;letter-spacing:0.14em;text-transform:uppercase;
+  color:var(--beige);text-decoration:none;font-weight:400;
+  transition:color .3s;position:relative;white-space:nowrap;
+}
+.nav-links a::after{
+  content:'';position:absolute;bottom:-4px;left:0;
+  width:0;height:1px;background:var(--gold);transition:width .3s;
+}
+.nav-links a:hover{color:var(--gold-light)}
+.nav-links a:hover::after{width:100%}
+.nav-hamburger{
+  display:none;flex-direction:column;gap:5px;
+  cursor:pointer;padding:4px;background:none;border:none;z-index:1100;
+}
+.nav-hamburger span{
+  display:block;width:24px;height:1.5px;
+  background:var(--beige);transition:all .35s;transform-origin:center;
+}
+.nav-hamburger.open span:nth-child(1){transform:translateY(6.5px) rotate(45deg);background:var(--gold-light)}
+.nav-hamburger.open span:nth-child(2){opacity:0;transform:scaleX(0)}
+.nav-hamburger.open span:nth-child(3){transform:translateY(-6.5px) rotate(-45deg);background:var(--gold-light)}
+.mobile-nav{
+  display:none;position:fixed;top:72px;left:0;right:0;
+  background:rgba(22,22,22,0.98);backdrop-filter:blur(16px);
+  z-index:999;padding:1.5rem 2rem 2.5rem;
+  border-bottom:1px solid rgba(200,168,76,0.15);
+  transform:translateY(-110%);transition:transform .4s cubic-bezier(.16,1,.3,1);
+}
+.mobile-nav.open{transform:translateY(0)}
+.mobile-nav ul{list-style:none}
+.mobile-nav ul li a{
+  display:block;padding:.9rem 0;
+  font-size:.78rem;letter-spacing:.22em;text-transform:uppercase;
+  color:var(--beige);text-decoration:none;
+  border-bottom:1px solid rgba(200,168,76,0.08);
+  transition:color .3s,padding-left .3s;font-weight:400;
+}
+.mobile-nav ul li:last-child a{border-bottom:none}
+.mobile-nav ul li a:hover{color:var(--gold-light);padding-left:.5rem}
+
+/* ── SHARED SECTION PIECES ── */
+section{position:relative;overflow:hidden}
+.sec-grad,.sec-grain{position:absolute;inset:0;pointer-events:none;z-index:0}
+.sec-grain{
+  opacity:.035;
+  background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+.section-inner{
+  position:relative;z-index:1;
+  max-width:1200px;margin:0 auto;
+  padding:clamp(3.5rem,8vw,7rem) clamp(1.2rem,4vw,4rem);
+}
+.section-label{
+  display:block;font-size:.65rem;letter-spacing:.35em;text-transform:uppercase;
+  color:var(--bronze);font-weight:500;margin-bottom:1rem;
+}
+.section-title{
+  font-family:var(--serif);font-size:clamp(1.9rem,4vw,3.2rem);
+  font-weight:300;line-height:1.2;color:var(--charcoal);margin-bottom:1rem;
+}
+.section-rule{width:48px;height:1px;background:var(--gold);margin-bottom:2.5rem}
+.dark-title{color:var(--ivory)}
+.dark-label{color:var(--gold)}
+.dark-rule{background:var(--gold)}
+
+/* ── HERO ── */
+#home{
+  min-height:100vh;background:var(--charcoal);
+  display:flex;align-items:center;justify-content:center;
+}
+.hero-grid-layout {
+  display:grid;
+  grid-template-columns: 1.2fr 1fr;
+  align-items:center;
+  gap: clamp(2rem,4vw,5rem);
+  width:100%;
+  text-align:left;
+}
+.hero-gradient{
+  position:absolute;inset:0;z-index:0;
+  background:
+    radial-gradient(ellipse 80% 60% at 20% 50%,rgba(28,43,58,.8) 0%,transparent 60%),
+    radial-gradient(ellipse 60% 80% at 80% 20%,rgba(139,105,20,.12) 0%,transparent 50%),
+    radial-gradient(ellipse 40% 40% at 70% 80%,rgba(28,43,58,.5) 0%,transparent 60%);
+}
+.hero-grain-layer{
+  position:absolute;inset:0;z-index:0;opacity:.035;
+  background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+.hero-content{
+  position:relative;z-index:2;
+  width:100%;
+}
+.hero-image-frame {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hero-portrait-circle {
+  width: clamp(260px, 30vw, 400px);
+  height: clamp(260px, 30vw, 400px);
+  border-radius: 50%;
+  border: 2px solid var(--gold);
+  overflow: hidden;
+  background: var(--graphite);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.5);
+}
+.hero-portrait-circle img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.hero-eyebrow{
+  font-family:var(--sans);
+  font-size:clamp(.72rem,1.8vw,.85rem);
+  letter-spacing:.35em;
+  text-transform:uppercase;
+  color:var(--gold-light);
+  margin-bottom:1.5rem;
+  font-weight:400;
+  opacity:0;
+  animation:fadeUp 1s .2s forwards;
+}
+.hero-name{
+  font-family:var(--serif);font-size:clamp(2.2rem,5vw,4.5rem);
+  font-weight:300;color:var(--ivory);line-height:1.1;
+  letter-spacing:.04em;opacity:0;animation:fadeUp 1s .5s forwards;margin-bottom:1.5rem;
+}
+.hero-name .initials{font-weight:500;color:var(--gold-light)}
+.hero-tagline{
+  font-family:var(--serif);font-size:clamp(.9rem,1.5vw,1.2rem);
+  color:var(--beige);letter-spacing:.05em;font-weight:300;
+  opacity:0;animation:fadeUp 1s 1s forwards;margin-bottom:2rem;
+}
+.hero-rotator{
+  height:2.2rem;overflow:hidden;margin-bottom:2.5rem;
+  opacity:0;animation:fadeUp 1s 1.2s forwards;
+}
+.hero-rotator-inner{animation:rotateWords 9s infinite}
+.hero-rotator-word{
+  display:block;font-size:.72rem;letter-spacing:.35em;text-transform:uppercase;
+  color:var(--gold-light);height:2.2rem;line-height:2.2rem;font-weight:400;
+}
+@keyframes rotateWords{
+  0%,15%{transform:translateY(0)}20%,32%{transform:translateY(-2.2rem)}
+  37%,49%{transform:translateY(-4.4rem)}54%,66%{transform:translateY(-6.6rem)}
+  71%,83%{transform:translateY(-8.8rem)}88%,100%{transform:translateY(-11rem)}
+}
+.hero-ctas{
+  display:flex;gap:1rem;justify-content:flex-start;flex-wrap:wrap;
+  opacity:0;animation:fadeUp 1s 1.5s forwards;
+}
+.btn-primary{
+  display:inline-block;padding:.85rem 2.4rem;background:transparent;
+  border:1px solid var(--gold);color:var(--gold-light);
+  font-family:var(--sans);font-size:.7rem;letter-spacing:.22em;
+  text-transform:uppercase;text-decoration:none;transition:all .4s;font-weight:400;
+  text-align:center;
+}
+.btn-primary:hover{background:var(--gold);color:var(--charcoal)}
+.btn-ghost{
+  display:inline-block;padding:.85rem 2.4rem;background:transparent;
+  border:1px solid rgba(200,168,76,.3);color:var(--beige);
+  font-family:var(--sans);font-size:.7rem;letter-spacing:.22em;
+  text-transform:uppercase;text-decoration:none;transition:all .4s;font-weight:400;
+  text-align:center;
+}
+.btn-ghost:hover{border-color:var(--gold);color:var(--gold-light)}
+.btn-bronze{border-color:var(--bronze);color:var(--bronze)}
+.btn-bronze:hover{background:var(--bronze);color:var(--ivory)}
+.hero-scroll{
+  position:absolute;bottom:2.5rem;left:50%;transform:translateX(-50%);
+  display:flex;flex-direction:column;align-items:center;gap:.6rem;
+  opacity:0;animation:fadeUp 1s 2s forwards;z-index:2;
+}
+.hero-scroll span{font-size:.6rem;letter-spacing:.3em;text-transform:uppercase;color:var(--gold);font-weight:400}
+.scroll-line{width:1px;height:40px;background:linear-gradient(to bottom,var(--gold),transparent);animation:scrollPulse 2s infinite}
+@keyframes scrollPulse{0%,100%{opacity:.4}50%{opacity:1}}
+
+/* ── ABOUT ── */
+#about{background:var(--ivory)}
+#about .sec-grad{
+  background:
+    radial-gradient(ellipse 70% 55% at 90% 10%,rgba(139,105,20,.07) 0%,transparent 55%),
+    radial-gradient(ellipse 55% 60% at 5% 85%,rgba(28,43,58,.06) 0%,transparent 55%),
+    radial-gradient(ellipse 45% 40% at 50% 50%,rgba(200,168,76,.04) 0%,transparent 60%);
+}
+.about-grid{display:grid;grid-template-columns:1.2fr 1fr;gap:clamp(2rem,5vw,6rem);align-items:center}
+.about-text p{font-size:clamp(.95rem,1.2vw,1.05rem);color:var(--text-mid);line-height:1.85;margin-bottom:1.5rem;font-weight:300}
+.about-img-wrap{position:relative}
+.about-img-wrap::before{
+  content:'';position:absolute;top:-16px;left:-16px;right:16px;bottom:16px;
+  border:1px solid rgba(200,168,76,.3);z-index:0;
+}
+.about-portrait{
+  position:relative;z-index:1;width:100%;
+  height:420px;object-fit:cover;
+  filter:grayscale(15%);border:1px solid var(--beige);
+}
+.about-quote{
+  font-family:var(--serif);font-size:clamp(1.15rem,1.8vw,1.45rem);
+  font-style:italic;color:var(--navy);line-height:1.6;
+  margin-top:2rem;padding-left:1.5rem;border-left:2px solid var(--gold);font-weight:300;
+}
+.stat-cards{
+  display:grid;grid-template-columns:repeat(4,1fr);
+  border:1px solid var(--ivory-mid);margin-top:clamp(2.5rem,5vw,5rem);
+}
+.stat-card{
+  padding:clamp(1.5rem,3vw,2.5rem) 1.5rem;
+  border-right:1px solid var(--ivory-mid);text-align:center;transition:background .3s;
+}
+.stat-card:last-child{border-right:none}
+.stat-card:hover{background:var(--ivory-warm)}
+.stat-num{
+  font-family:var(--serif);font-size:clamp(2rem,4vw,2.8rem);font-weight:300;
+  color:var(--bronze);display:block;line-height:1;margin-bottom:.5rem;
+}
+.stat-label{font-size:.68rem;letter-spacing:.2em;text-transform:uppercase;color:var(--text-light);font-weight:400}
+
+/* ── LEADERSHIP ── */
+#leadership{background:var(--charcoal)}
+#leadership .sec-grad{
+  background:
+    radial-gradient(ellipse 75% 60% at 15% 40%,rgba(28,43,58,.9) 0%,transparent 60%),
+    radial-gradient(ellipse 55% 70% at 85% 10%,rgba(139,105,20,.14) 0%,transparent 50%),
+    radial-gradient(ellipse 40% 45% at 60% 90%,rgba(28,43,58,.6) 0%,transparent 55%);
+}
+.leadership-grid{
+  display:grid;grid-template-columns:repeat(3,1fr);
+  gap:2px;background:rgba(200,168,76,.1);margin-top:1rem;
+}
+.l-card{
+  background:var(--graphite);padding:clamp(1.8rem,3vw,3rem) clamp(1.4rem,2.5vw,2.5rem);
+  transition:all .4s;position:relative;overflow:hidden;
+}
+.l-card::before{
+  content:'';position:absolute;top:0;left:0;
+  width:3px;height:0;background:var(--gold);transition:height .4s;
+}
+.l-card:hover::before{height:100%}
+.l-card:hover{background:var(--graphite-mid);transform:translateY(-2px)}
+.l-card-org{font-size:.6rem;letter-spacing:.3em;text-transform:uppercase;color:var(--gold);margin-bottom:1rem;font-weight:500}
+.l-card-icon{
+  width:36px;height:36px;border:1px solid rgba(200,168,76,.3);border-radius:50%;
+  display:flex;align-items:center;justify-content:center;margin-bottom:1.5rem;
+}
+.l-card-icon svg{width:16px;height:16px;stroke:var(--gold);fill:none;stroke-width:1.5}
+.l-card-name{font-family:var(--serif);font-size:clamp(1.3rem,2vw,1.6rem);font-weight:300;color:var(--ivory);margin-bottom:.5rem;line-height:1.2}
+.l-card-period{font-size:.72rem;letter-spacing:.12em;color:var(--gold-light);margin-bottom:1.5rem;font-weight:400}
+.l-card-desc{font-size:.88rem;color:var(--beige);line-height:1.75;font-weight:300}
+
+/* ── BUSINESS LEGACY ── */
+#business{background:var(--ivory-warm)}
+#business .sec-grad{
+  background:
+    radial-gradient(ellipse 65% 50% at 95% 20%,rgba(139,105,20,.09) 0%,transparent 55%),
+    radial-gradient(ellipse 50% 65% at 0% 80%,rgba(28,43,58,.07) 0%,transparent 55%),
+    radial-gradient(ellipse 40% 40% at 40% 50%,rgba(200,168,76,.05) 0%,transparent 60%);
+}
+.business-layout{display:grid;grid-template-columns:1fr 1fr;gap:clamp(2rem,5vw,5rem);align-items:start;margin-top:2rem}
+.business-text p{font-size:clamp(.95rem,1.2vw,1rem);color:var(--text-mid);line-height:1.85;margin-bottom:1.5rem;font-weight:300}
+.pillars{
+  display:grid;grid-template-columns:1fr 1fr;
+  gap:1px;background:var(--beige-light);border:1px solid var(--beige-light);margin-top:2.5rem;
+}
+.pillar{background:var(--ivory-warm);padding:1.8rem 1.5rem;transition:background .3s}
+.pillar:hover{background:var(--ivory)}
+.pillar-icon{font-size:1.3rem;margin-bottom:.8rem;opacity:.7}
+.pillar h4{font-family:var(--serif);font-size:1.05rem;font-weight:500;color:var(--charcoal);margin-bottom:.4rem}
+.pillar p{font-size:.82rem;color:var(--text-light);line-height:1.6;font-weight:300}
+.biz-gallery{display:grid;grid-template-columns:1fr 1fr;grid-template-rows:auto auto;gap:12px}
+.g-img{overflow:hidden;background:var(--beige-light);position:relative;min-height:160px;border:1px solid rgba(0,0,0,0.05)}
+.g-img.tall{grid-row:span 2;min-height:340px}
+.g-img img{width:100%;height:100%;object-fit:cover;transition:transform .6s;filter:grayscale(15%)}
+.g-img.logo-contain img{object-fit:contain;padding:2.5rem;background:#fff}
+.g-img.logo-contain-sm img{object-fit:contain;padding:1.5rem;background:#fff}
+.g-img:hover img{transform:scale(1.04)}
+.g-caption{
+  position:absolute;bottom:0;left:0;right:0;padding:1rem;
+  background:linear-gradient(to top,rgba(26,26,26,.8),transparent);
+  font-size:.65rem;letter-spacing:.18em;text-transform:uppercase;
+  color:rgba(245,241,235,.9);font-weight:400;
+}
+.g-stat{
+  background:var(--navy);display:flex;align-items:center;justify-content:center;
+  min-height:160px;
+}
+.g-stat-inner{text-align:center;padding:1.5rem}
+.g-stat-num{font-family:var(--serif);font-size:clamp(1.8rem,4vw,2.5rem);font-weight:300;color:var(--gold-light);line-height:1;display:block}
+.g-stat-label{font-size:.62rem;letter-spacing:.2em;text-transform:uppercase;color:var(--beige);margin-top:.5rem;display:block}
+
+/* ── RECOGNITION ── */
+#recognition{background:var(--ivory);border-bottom:1px solid var(--ivory-mid)}
+.rec-layout{display:grid;grid-template-columns:1fr 1.2fr;gap:clamp(2rem,5vw,5rem);align-items:center}
+.rec-img-wrap{position:relative}
+.rec-img-wrap::after{
+  content:'';position:absolute;inset:12px;border:1px solid var(--gold);z-index:2;pointer-events:none;
+}
+.rec-portrait{width:100%;height:450px;object-fit:cover;filter:grayscale(10%);position:relative;z-index:1}
+.award-badge{
+  display:inline-block;padding:.5rem 1rem;background:var(--ivory-warm);
+  border:1px solid var(--gold);font-size:.65rem;letter-spacing:.2em;
+  text-transform:uppercase;color:var(--bronze);margin-bottom:1.5rem;font-weight:600;
+}
+
+/* ── ACHIEVEMENTS ── */
+#achievements{background:var(--navy)}
+#achievements .sec-grad{
+  background:
+    radial-gradient(ellipse 80% 55% at 10% 50%,rgba(20,36,52,.95) 0%,transparent 60%),
+    radial-gradient(ellipse 50% 65% at 88% 15%,rgba(139,105,20,.13) 0%,transparent 50%),
+    radial-gradient(ellipse 45% 40% at 65% 85%,rgba(28,43,58,.7) 0%,transparent 55%);
+}
+.ach-grid{
+  display:grid;grid-template-columns:1fr 1fr;
+  gap:2px;background:rgba(200,168,76,.08);margin-top:1.5rem;
+}
+.ach-card{
+  background:var(--navy-mid);padding:clamp(1.8rem,3vw,3rem);
+  transition:all .3s;position:relative;
+}
+.ach-card::after{
+  content:'';position:absolute;bottom:0;left:0;right:0;height:2px;
+  background:linear-gradient(to right,var(--gold),transparent);
+  transform:scaleX(0);transform-origin:left;transition:transform .4s;
+}
+.ach-card:hover::after{transform:scaleX(1)}
+.ach-card:hover{background:rgba(36,52,71,.9)}
+.ach-num{font-family:var(--serif);font-size:clamp(2.5rem,5vw,3.5rem);font-weight:300;color:rgba(200,168,76,.2);line-height:1;margin-bottom:1rem}
+.ach-title{font-family:var(--serif);font-size:clamp(1.1rem,2vw,1.45rem);font-weight:400;color:var(--ivory);margin-bottom:1rem;line-height:1.3}
+.ach-desc{font-size:.9rem;color:var(--beige);line-height:1.75;font-weight:300}
+
+/* ── PHILANTHROPY ── */
+#philanthropy{background:var(--ivory)}
+#philanthropy .sec-grad{
+  background:
+    radial-gradient(ellipse 60% 50% at 5% 20%,rgba(139,105,20,.06) 0%,transparent 55%),
+    radial-gradient(ellipse 70% 55% at 95% 75%,rgba(28,43,58,.06) 0%,transparent 55%),
+    radial-gradient(ellipse 45% 50% at 50% 45%,rgba(200,168,76,.04) 0%,transparent 60%);
+}
+.phil-header{display:grid;grid-template-columns:1fr 1fr;gap:clamp(2rem,5vw,5rem);align-items:start;margin-bottom:clamp(2.5rem,5vw,5rem)}
+.phil-header p{font-size:clamp(.95rem,1.2vw,1rem);color:var(--text-mid);line-height:1.85;font-weight:300;margin-bottom:1.2rem}
+.foundation-badge{
+  display:inline-flex;align-items:center;gap:.8rem;
+  padding:.8rem 1.5rem;border:1px solid var(--bronze);margin-top:1rem;
+  text-decoration:none;background:var(--ivory-warm);transition:background 0.3s;
+}
+.foundation-badge:hover{background:var(--ivory-mid)}
+.foundation-badge img{height:32px;width:auto}
+.foundation-badge span{font-size:.7rem;letter-spacing:.18em;text-transform:uppercase;color:var(--bronze);font-weight:500}
+.phil-dark-box{padding:clamp(1.5rem,3vw,3rem);background:var(--charcoal)}
+.phil-dark-quote{
+  font-family:var(--serif);font-size:clamp(1.1rem,2vw,1.5rem);font-style:italic;
+  font-weight:300;line-height:1.6;color:var(--ivory-warm);margin-bottom:1.5rem;
+}
+.phil-dark-attr{font-size:.65rem;letter-spacing:.25em;text-transform:uppercase;color:var(--gold);font-weight:400}
+.phil-values{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:rgba(200,168,76,.1);margin-top:2rem}
+.phil-value{background:var(--graphite);padding:1.2rem;text-align:center}
+.phil-value-word{font-family:var(--serif);font-size:clamp(1.2rem,2.5vw,1.8rem);font-weight:300;color:var(--gold-light);display:block}
+.phil-value-sub{font-size:.6rem;letter-spacing:.15em;text-transform:uppercase;color:var(--beige)}
+.impact-cards{
+  display:grid;grid-template-columns:repeat(4,1fr);
+  gap:1px;background:var(--ivory-mid);border:1px solid var(--ivory-mid);margin-top:1rem;
+}
+.impact-card{background:var(--ivory);padding:clamp(1.5rem,3vw,2.5rem) 1.5rem;text-align:center;transition:background .3s}
+.impact-card:hover{background:var(--ivory-warm)}
+.impact-num{font-family:var(--serif);font-size:clamp(1.8rem,3vw,2.5rem);font-weight:300;color:var(--bronze);display:block;line-height:1;margin-bottom:.5rem}
+.impact-label{font-size:.68rem;letter-spacing:.18em;text-transform:uppercase;color:var(--text-light);font-weight:400}
+.phil-gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:3rem}
+.ph-img{overflow:hidden;position:relative;background:var(--beige-light)}
+.ph-img.wide{grid-column:span 2}
+.ph-img img{width:100%;height:clamp(200px,22vw,300px);object-fit:cover;transition:transform .6s;filter:grayscale(10%)}
+.ph-img:hover img{transform:scale(1.04)}
+.ph-overlay{
+  position:absolute;inset:0;
+  background:linear-gradient(to top,rgba(26,26,26,0.6),transparent);
+  opacity:0;transition:opacity .4s;display:flex;align-items:flex-end;padding:1.5rem;
+}
+.ph-img:hover .ph-overlay{opacity:1}
+.ph-overlay span{font-size:.65rem;letter-spacing:.2em;text-transform:uppercase;color:var(--ivory);font-weight:400}
+
+/* ── LEGACY ── */
+#legacy{background:var(--charcoal)}
+#legacy .sec-grad{
+  background:
+    radial-gradient(ellipse 70% 60% at 80% 30%,rgba(139,105,20,.11) 0%,transparent 55%),
+    radial-gradient(ellipse 60% 70% at 10% 70%,rgba(28,43,58,.85) 0%,transparent 60%),
+    radial-gradient(ellipse 40% 40% at 45% 10%,rgba(200,168,76,.06) 0%,transparent 55%);
+}
+.legacy-layout{display:grid;grid-template-columns:1fr 1fr;gap:clamp(2rem,5vw,6rem);align-items:start}
+.timeline{position:relative;padding-left:2rem}
+.timeline::before{
+  content:'';position:absolute;left:0;top:6px;bottom:0;
+  width:1px;background:linear-gradient(to bottom,var(--gold),rgba(200,168,76,.1));
+}
+.tl-item{position:relative;margin-bottom:3rem;opacity:0;transform:translateX(-16px);transition:all .6s}
+.tl-item.visible{opacity:1;transform:translateX(0)}
+.tl-dot{
+  position:absolute;left:-2.35rem;top:4px;
+  width:10px;height:10px;border-radius:50%;
+  border:1.5px solid var(--gold);background:var(--charcoal);
+}
+.tl-year{font-size:.65rem;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);margin-bottom:.4rem;font-weight:400}
+.tl-heading{font-family:var(--serif);font-size:1.2rem;font-weight:400;color:var(--ivory);margin-bottom:.4rem}
+.tl-body{font-size:.88rem;color:var(--beige);line-height:1.7;font-weight:300}
+.quote-block{
+  padding:clamp(2rem,4vw,4rem) clamp(1.5rem,3vw,3rem);
+  border:1px solid rgba(200,168,76,.2);position:relative;
+  background:rgba(255,255,255,0.02);
+}
+.quote-block::before{
+  content:'\201C';font-family:var(--serif);font-size:8rem;
+  color:rgba(200,168,76,.1);position:absolute;top:-2rem;left:2rem;line-height:1;
+}
+.big-quote{
+  font-family:var(--serif);font-size:clamp(1.15rem,2vw,1.7rem);
+  font-style:italic;color:var(--ivory-warm);line-height:1.6;
+  font-weight:300;position:relative;z-index:1;margin-bottom:2rem;
+}
+.quote-attr{font-size:.65rem;letter-spacing:.25em;text-transform:uppercase;color:var(--gold);font-weight:400}
+.legacy-values{
+  display:grid;grid-template-columns:1fr 1fr;
+  gap:1px;background:rgba(200,168,76,.08);margin-top:2rem;
+}
+.lv{background:var(--graphite);padding:1.5rem;text-align:center}
+.lv-word{font-family:var(--serif);font-size:1.15rem;font-weight:400;color:var(--ivory);display:block;margin-bottom:.3rem}
+.lv-sub{font-size:.62rem;letter-spacing:.18em;text-transform:uppercase;color:var(--gold);font-weight:400}
+
+/* ── CONTACT ── */
+#contact{background:var(--ivory-warm)}
+#contact .sec-grad{
+  background:
+    radial-gradient(ellipse 65% 55% at 15% 20%,rgba(139,105,20,.08) 0%,transparent 55%),
+    radial-gradient(ellipse 55% 60% at 85% 80%,rgba(28,43,58,.07) 0%,transparent 55%);
+}
+.contact-inner{
+  position:relative;z-index:1;
+  max-width:640px;margin:0 auto;
+  padding:clamp(3.5rem,8vw,7rem) clamp(1.2rem,4vw,2rem);
+  text-align:center;
+}
+.contact-inner .section-rule{margin:0 auto 2.5rem}
+.contact-body{font-size:1rem;color:var(--text-mid);line-height:1.85;font-weight:300;margin-bottom:2.5rem}
+.contact-links{display:flex;flex-direction:column;gap:.8rem;align-items:center;margin-bottom:3rem}
+.contact-link{font-size:.85rem;letter-spacing:.14em;color:var(--bronze);text-decoration:none;font-weight:400;transition:color .3s}
+.contact-link:hover{color:var(--charcoal)}
+.contact-ctas{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap}
+
+/* ── FOOTER ── */
+footer{
+  background:var(--charcoal);
+  padding:clamp(2.5rem,4vw,3.5rem) clamp(1.5rem,4vw,4rem);
+  display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:1.5rem;
+  border-top:1px solid rgba(200,168,76,0.1);
+}
+.footer-brand{font-family:var(--serif);font-size:1.2rem;font-weight:400;color:var(--ivory);letter-spacing:.06em}
+.footer-sub{font-size:.68rem;letter-spacing:.2em;text-transform:uppercase;color:var(--beige);margin-top:.4rem;font-weight:300}
+.footer-right{font-size:.65rem;letter-spacing:.15em;text-transform:uppercase;color:var(--text-light);font-weight:300;text-align:right}
+
+/* ── ANIMATIONS ── */
+@keyframes fadeUp{from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:translateY(0)}}
+.reveal{opacity:0;transform:translateY(32px);transition:opacity .8s,transform .8s}
+.reveal.visible{opacity:1;transform:translateY(0)}
+.reveal-left{opacity:0;transform:translateX(-32px);transition:opacity .8s,transform .8s}
+.reveal-left.visible{opacity:1;transform:translateX(0)}
+.reveal-right{opacity:0;transform:translateX(32px);transition:opacity .8s,transform .8s}
+.reveal-right.visible{opacity:1;transform:translateX(0)}
+.d1{transition-delay:.1s}.d2{transition-delay:.2s}.d3{transition-delay:.3s}
+.d4{transition-delay:.4s}.d5{transition-delay:.5s}
+
+/* ── RESPONSIVE ── */
+@media(max-width:1100px){
+  .nav-links{gap:1.4rem}
+  .nav-links a{font-size:.66rem}
+  .leadership-grid{grid-template-columns:1fr 1fr}
+}
+
+@media(max-width:900px){
+  nav{height:64px}
+  .mobile-nav{top:64px}
+  .nav-links{display:none}
+  .nav-hamburger{display:flex}
+  .mobile-nav{display:block}
+
+  .hero-grid-layout{grid-template-columns:1fr; text-align:center; gap:3rem;}
+  .hero-image-frame{order: -1;}
+  .hero-ctas{justify-content:center;}
+
+  .about-grid{grid-template-columns:1fr}
+  .about-img-wrap::before{display:none}
+  .about-portrait{height:340px}
+
+  .stat-cards{grid-template-columns:1fr 1fr}
+  .stat-card:nth-child(2){border-right:none}
+  .stat-card:nth-child(3){border-top:1px solid var(--ivory-mid)}
+  .stat-card:nth-child(4){border-right:none;border-top:1px solid var(--ivory-mid)}
+
+  .leadership-grid{grid-template-columns:1fr}
+
+  .business-layout{grid-template-columns:1fr}
+  .biz-gallery{grid-template-columns:1fr 1fr}
+  .g-img.tall{grid-row:span 1;min-height:180px}
+
+  .rec-layout{grid-template-columns:1fr}
+  .rec-portrait{height:360px}
+
+  .ach-grid{grid-template-columns:1fr}
+
+  .phil-header{grid-template-columns:1fr}
+  .impact-cards{grid-template-columns:1fr 1fr}
+  .impact-card:nth-child(2){border-right:none}
+  .impact-card:nth-child(3){border-top:1px solid var(--ivory-mid)}
+  .impact-card:nth-child(4){border-right:none;border-top:1px solid var(--ivory-mid)}
+  .phil-gallery{grid-template-columns:1fr 1fr}
+  .ph-img.wide{grid-column:span 1}
+
+  .legacy-layout{grid-template-columns:1fr}
+}
+
+@media(max-width:600px){
+  .hero-eyebrow{font-size:.7rem;letter-spacing:.1em}
+  .hero-ctas{flex-direction:column;align-items:center}
+  .btn-primary,.btn-ghost{width:100%;max-width:280px}
+
+  .pillars{grid-template-columns:1fr}
+  .biz-gallery{grid-template-columns:1fr}
+  .g-img.tall{min-height:200px}
+  .g-stat{min-height:120px}
+
+  .phil-gallery{grid-template-columns:1fr}
+  .ph-img img{height:200px}
+
+  .contact-ctas{flex-direction:column;align-items:center}
+  .contact-ctas .btn-primary,.contact-ctas .btn-ghost{width:100%;max-width:280px}
+
+  footer{flex-direction:column;text-align:center}
+  .footer-right{text-align:center}
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="#home" class="nav-brand">Mohanlal Ghewarchand Bhandari</a>
+  <ul class="nav-links">
+    <li><a href="#home">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#leadership">Leadership</a></li>
+    <li><a href="#business">Business Legacy</a></li>
+    <li><a href="#recognition">Recognition</a></li>
+    <li><a href="#achievements">Achievements</a></li>
+    <li><a href="#philanthropy">Philanthropy</a></li>
+    <li><a href="#legacy">Legacy</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <button class="nav-hamburger" id="hamburger" aria-label="Open menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+<div class="mobile-nav" id="mobileNav">
+  <ul>
+    <li><a href="#home" class="mob-link">Home</a></li>
+    <li><a href="#about" class="mob-link">About</a></li>
+    <li><a href="#leadership" class="mob-link">Leadership</a></li>
+    <li><a href="#business" class="mob-link">Business Legacy</a></li>
+    <li><a href="#recognition" class="mob-link">Recognition</a></li>
+    <li><a href="#achievements" class="mob-link">Achievements</a></li>
+    <li><a href="#philanthropy" class="mob-link">Philanthropy</a></li>
+    <li><a href="#legacy" class="mob-link">Legacy</a></li>
+    <li><a href="#contact" class="mob-link">Contact</a></li>
+  </ul>
+</div>
+
+<section id="home">
+  <div class="hero-gradient"></div>
+  <div class="hero-grain-layer"></div>
+  <div class="section-inner">
+    <div class="hero-grid-layout">
+      <div class="hero-content">
+        <p class="hero-eyebrow">A Legacy of Leadership &amp; Purpose</p>
+        <h1 class="hero-name">Mohanlal<br><span class="initials">Ghewarchand Bhandari</span></h1>
+        <p class="hero-tagline">Chartered Accountant &nbsp;•&nbsp; Business Leader &nbsp;•&nbsp; Corporate Steward &nbsp;•&nbsp; Philanthropist</p>
+        <div class="hero-rotator">
+          <div class="hero-rotator-inner">
+            <span class="hero-rotator-word">Stewardship</span>
+            <span class="hero-rotator-word">Integrity</span>
+            <span class="hero-rotator-word">Governance</span>
+            <span class="hero-rotator-word">Excellence</span>
+            <span class="hero-rotator-word">Impact</span>
+          </div>
+        </div>
+        <div class="hero-ctas">
+          <a href="#legacy" class="btn-primary">Explore Legacy</a>
+          <a href="#philanthropy" class="btn-ghost">Philanthropic Vision</a>
+        </div>
+      </div>
+      <div class="hero-image-frame">
+        <div class="hero-portrait-circle">
+          <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=600" alt="Mohanlal Ghewarchand Bhandari Profile">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="hero-scroll">
+    <span>Scroll</span>
+    <div class="scroll-line"></div>
+  </div>
+</section>
+
+<section id="about">
+  <div class="sec-grad"></div>
+  <div class="section-inner">
+    <div class="about-grid">
+      <div class="reveal-left">
+        <span class="section-label">Professional Profile</span>
+        <h2 class="section-title">A Life of<br>Leadership &amp; Governance</h2>
+        <div class="section-rule"></div>
+        <p>CA Mohanlalji Bhandari is a qualified Chartered Accountant with decades of deep expertise spanning finance, organizational consulting, institutional banking, and executive business leadership. Through a long and distinguished professional journey, he has anchored multiple boards, strategic panels, and corporate stewardship roles across various growth sectors.</p>
+        <p>Known for his sharp adherence to ethical compliance, strategic planning, and commercial insight, he has served on the boards of premier institutions including RBL Bank and Everest Industries Ltd., shaping business policies and robust financial structures.</p>
+        <p>His professional career is paired with a lasting dedication to mentoring young professionals and building organizational institutions that stand the test of time.</p>
+        <blockquote class="about-quote">"True leadership is the stewardship of trust — placed in you by institutions, by people, and by purpose."</blockquote>
+      </div>
+      <div class="reveal-right">
+        <div class="about-img-wrap">
+          <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&q=80&w=600" class="about-portrait" alt="CA Mohanlalji Bhandari Professional Image">
+        </div>
+      </div>
+    </div>
+    <div class="stat-cards reveal">
+      <div class="stat-card"><span class="stat-num">45+</span><span class="stat-label">Years of Practice</span></div>
+      <div class="stat-card"><span class="stat-num">350+</span><span class="stat-label">Consulting Experts</span></div>
+      <div class="stat-card"><span class="stat-num">6</span><span class="stat-label">Global Locations</span></div>
+      <div class="stat-card"><span class="stat-num">∞</span><span class="stat-label">Community Impact</span></div>
+    </div>
+  </div>
+</section>
+
+<section id="leadership">
+  <div class="sec-grad"></div>
+  <div class="sec-grain"></div>
+  <div class="section-inner">
+    <span class="section-label dark-label reveal">Board &amp; Corporate Governance</span>
+    <h2 class="section-title dark-title reveal d1">Corporate Leadership<br>&amp; Governance</h2>
+    <div class="section-rule dark-rule reveal d2"></div>
+    <div class="leadership-grid">
+      <div class="l-card reveal d1">
+        <div class="l-card-icon"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M9 9h6M9 12h6M9 15h4"/></svg></div>
+        <p class="l-card-org">Banking &amp; Financial Services</p>
+        <h3 class="l-card-name">RBL Bank</h3>
+        <p class="l-card-period">Former Director &nbsp;·&nbsp; 2007 – 2010</p>
+        <p class="l-card-desc">Served on the Board of Directors during an important period of transformation and modernization, helping direct strategy, audit structures, and institutional growth framework.</p>
+      </div>
+      <div class="l-card reveal d2">
+        <div class="l-card-icon"><svg viewBox="0 0 24 24"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg></div>
+        <p class="l-card-org">Industrial Enterprise</p>
+        <h3 class="l-card-name">Everest Industries Ltd.</h3>
+        <p class="l-card-period">Director &nbsp;·&nbsp; 2004 – 2013</p>
+        <p class="l-card-desc">Provided key commercial oversight and board governance expertise for one of India's legacy industrial giants, tracking enterprise risks and strategic financial movements over a decade.</p>
+      </div>
+      <div class="l-card reveal d3">
+        <div class="l-card-icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 8v4l3 3"/></svg></div>
+        <p class="l-card-org">Advisory &amp; Business Strategy</p>
+        <h3 class="l-card-name">MGB Group</h3>
+        <p class="l-card-period">Founder &amp; Principal Steward</p>
+        <p class="l-card-desc">Guided the growth of MGB consulting verticals into cross-border markets, advising enterprises on corporate structuring, complex asset valuation, taxation, and financial security.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="business">
+  <div class="sec-grad"></div>
+  <div class="section-inner">
+    <span class="section-label reveal">The Institution</span>
+    <h2 class="section-title reveal d1">The MGB Legacy<br>of Excellence</h2>
+    <div class="section-rule reveal d2"></div>
+    <div class="business-layout">
+      <div class="business-text reveal-left">
+        <p>CA Mohanlalji Bhandari founded MGB Group in 1979 as an independent, practicing accountancy firm. Through a relentless commitment to rigorous practice and business transparency, the practice has matured into a multi-disciplinary, full-service advisory powerhouse with over 350 skilled team members.</p>
+        <p>Operating across six strategic corporate hubs in India alongside a dedicated office in GIFT City Dubai, the firm serves global organizations with a complete stack of financial advisory solutions built upon a solid base of trust and integrity.</p>
+        <div class="pillars">
+          <div class="pillar"><div class="pillar-icon">◈</div><h4>Assurance &amp; Tax</h4><p>Providing financial audits, structural regulatory compliance, and domestic/international tax advisory.</p></div>
+          <div class="pillar"><div class="pillar-icon">◈</div><h4>Cyber Security &amp; Risk</h4><p>Protecting critical modern enterprise digital frameworks with cutting-edge asset assurance mechanisms.</p></div>
+          <div class="pillar"><div class="pillar-icon">◈</div><h4>Corporate Finance</h4><p>Structuring value-driven business mergers, corporate restructures, capital raising, and portfolio allocations.</p></div>
+          <div class="pillar"><div class="pillar-icon">◈</div><h4>Valuation Advisory</h4><p>High-integrity business valuations and financial insights customized for demanding enterprise ecosystems.</p></div>
+        </div>
+      </div>
+      <div class="biz-gallery reveal-right">
+        <div class="g-img tall logo-contain">
+          <img src="https://www.mgbadvisors.com/wp-content/uploads/2020/07/mgb-logo.png" alt="MGB Advisors">
+          <div class="g-caption">MGB Group • Established 1979</div>
+        </div>
+        <div class="g-img logo-contain-sm">
+          <img src="https://chandramohanfoundation.org/wp-content/uploads/2021/10/Chandramohan-foundation-logo.png" alt="ChandraMohan Foundation">
+          <div class="g-caption">ChandraMohan Foundation</div>
+        </div>
+        <div class="g-img g-stat">
+          <div class="g-stat-inner">
+            <span class="g-stat-num">6</span>
+            <span class="g-stat-label">Offices Across India &amp; Dubai</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="recognition">
+  <div class="section-inner">
+    <div class="rec-layout">
+      <div class="reveal-left">
+        <div class="rec-img-wrap">
+          <img src="https://images.unsplash.com/photo-1475721027785-f74eccf877e2?auto=format&fit=crop&q=80&w=600" class="rec-portrait" alt="Award Ceremony Image">
+        </div>
+      </div>
+      <div class="reveal-right">
+        <span class="section-label">Distinguished Recognition</span>
+        <span class="award-badge">JCAF Lifetime Achievement</span>
+        <h2 class="section-title">Honored for a Lifetime of Service</h2>
+        <div class="section-rule"></div>
+        <p>Under the leadership of Mohanlal Ghewarchand Bhandari, business metrics have consistently matched societal value. His contribution to public finance and industry governance earned him the prestigious **JCAF Lifetime Achievement Award**.</p>
+        <p>The award celebrates his deep commitment to public accountability, financial advisory best practices, and active participation in mentorship programs across trade groups, educational systems, and regional trade bodies.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="achievements">
+  <div class="sec-grad"></div>
+  <div class="sec-grain"></div>
+  <div class="section-inner">
+    <span class="section-label dark-label reveal">Professional Milestones</span>
+    <h2 class="section-title dark-title reveal d1">Milestones of<br>Professional Excellence</h2>
+    <div class="section-rule dark-rule reveal d2"></div>
+    <div class="ach-grid">
+      <div class="ach-card reveal d1"><div class="ach-num">01</div><h3 class="ach-title">Founding of MGB Group (1979)</h3><p class="ach-desc">Began as a boutique practice, steering the firm over four decades into a multi-city advisory collective managing business transformations on an international scale.</p></div>
+      <div class="ach-card reveal d2"><div class="ach-num">02</div><h3 class="ach-title">Board-Level Stewardship</h3><p class="ach-desc">Instrumental board-level interventions in premium commercial institutions like RBL Bank and Everest Industries, refining global risk matrices and compliance structures.</p></div>
+      <div class="ach-card reveal d3"><div class="ach-num">03</div><h3 class="ach-title">Cross-Border Service Integration</h3><p class="ach-desc">Spearheaded the firm's strategic geographic expansion, connecting mature commercial fields across India with international business channels in GIFT City Dubai.</p></div>
+      <div class="ach-card reveal d4"><div class="ach-num">04</div><h3 class="ach-title">Esteemed Jury Panel Appointments</h3><p class="ach-desc">Appointed frequently as an expert legal and corporate governance juror across industry benchmark events, professional corporate strategy platforms, and finance awards selectors.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="philanthropy">
+  <div class="sec-grad"></div>
+  <div class="section-inner">
+    <div class="phil-header">
+      <div class="reveal-left">
+        <span class="section-label">Social Impact &amp; Purpose</span>
+        <h2 class="section-title">Purpose<br>Beyond Business</h2>
+        <div class="section-rule"></div>
+        <p>Through the philanthropic initiatives deeply integrated with the ChandraMohan Foundation, systematic developments have been made to support basic education, advanced healthcare access, sanitary hygiene infrastructure, nutrition security, and sustainability parameters for schools and marginalized groups throughout India.</p>
+        <p>The foundation firmly believes that enterprise works best when paired with civic responsibility—transforming human lives by offering structured socio-economic opportunities to communities that need them most.</p>
+        <a href="https://www.chandramohanfoundation.org" target="_blank" class="foundation-badge">
+          <img src="https://chandramohanfoundation.org/wp-content/uploads/2021/10/Chandramohan-foundation-logo.png" alt="ChandraMohan Foundation Logo">
+          <span>ChandraMohan Foundation</span>
+        </a>
+      </div>
+      <div class="reveal-right">
+        <div class="phil-dark-box">
+          <p class="phil-dark-quote">"A life lived for others is a life well lived."</p>
+          <p class="phil-dark-attr">ChandraMohan Foundation Mission</p>
+          <div class="phil-values">
+            <div class="phil-value"><span class="phil-value-word">Education</span><span class="phil-value-sub">Schools Built</span></div>
+            <div class="phil-value"><span class="phil-value-word">Health</span><span class="phil-value-sub">Medical Camps</span></div>
+            <div class="phil-value"><span class="phil-value-word">Hygiene</span><span class="phil-value-sub">Clean Water</span></div>
+            <div class="phil-value"><span class="phil-value-word">Community</span><span class="phil-value-sub">Rural Welfare</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="impact-cards reveal">
+      <div class="impact-card"><span class="impact-num">300+</span><span class="impact-label">Schools Reached</span></div>
+      <div class="impact-card"><span class="impact-num">10+</span><span class="impact-label">Cities Covered</span></div>
+      <div class="impact-card"><span class="impact-num">45</span><span class="impact-label">Years of Social Service</span></div>
+      <div class="impact-card"><span class="impact-num">∞</span><span class="impact-label">Community Development</span></div>
+    </div>
+    <div class="phil-gallery">
+      <div class="ph-img wide reveal-left"><img src="https://chandramohanfoundation.org/wp-content/uploads/2023/08/banner-1.jpg" alt="Education Initiatives"><div class="ph-overlay"><span>Education Projects</span></div></div>
+      <div class="ph-img reveal-right"><img src="https://chandramohanfoundation.org/wp-content/uploads/2023/08/banner-2.jpg" alt="Healthcare Programs"><div class="ph-overlay"><span>Healthcare Initiatives</span></div></div>
+      <div class="ph-img reveal d1"><img src="https://chandramohanfoundation.org/wp-content/uploads/2023/08/banner-3.jpg" alt="Community Welfare"><div class="ph-overlay"><span>Community Support</span></div></div>
+      <div class="ph-img wide reveal d2"><img src="https://chandramohanfoundation.org/wp-content/uploads/2023/08/banner-4.jpg" alt="Sustainable Impact"><div class="ph-overlay"><span>Socio-Economic Value</span></div></div>
+    </div>
+  </div>
+</section>
+
+<section id="legacy">
+  <div class="sec-grad"></div>
+  <div class="sec-grain"></div>
+  <div class="section-inner">
+    <span class="section-label dark-label reveal">The Journey</span>
+    <h2 class="section-title dark-title reveal d1">A Legacy of Leadership<br>&amp; Purpose</h2>
+    <div class="section-rule dark-rule reveal d2"></div>
+    <div class="legacy-layout">
+      <div class="timeline reveal-left">
+        <div class="tl-item"><div class="tl-dot"></div><p class="tl-year">1979</p><h4 class="tl-heading">The Foundation of MGB</h4><p class="tl-body">CA Mohanlalji Bhandari established MGB Group, anchoring the financial advisory and corporate practice with values of unyielding professional transparency.</p></div>
+        <div class="tl-item"><div class="tl-dot"></div><p class="tl-year">2004 – 2013</p><h4 class="tl-heading">Directorship at Everest Industries Ltd.</h4><p class="tl-body">Contributed an impactful nine-year corporate term on the board, developing corporate governance standards for heavy industrial markets.</p></div>
+        <div class="tl-item"><div class="tl-dot"></div><p class="tl-year">2007 – 2010</p><h4 class="tl-heading">Directorship at RBL Bank</h4><p class="tl-body">Steered financial compliance matrices and asset audit standards on the board during a key corporate phase for the banking institution.</p></div>
+        <div class="tl-item"><div class="tl-dot"></div><p class="tl-year">Strategic Evolution</p><h4 class="tl-heading">GIFT City Dubai Integration</h4><p class="tl-body">Pioneered cross-border service capabilities, connecting active domestic financial channels to regional corporate spaces in Dubai.</p></div>
+        <div class="tl-item"><div class="tl-dot"></div><p class="tl-year">Sustained Vision</p><h4 class="tl-heading">Civic Stewardship via ChandraMohan Foundation</h4><p class="tl-body">Continues to drive large-scale, nationwide humanitarian programs focused on improving education, nutrition, and local public hygiene.</p></div>
+      </div>
+      <div class="reveal-right">
+        <div class="quote-block">
+          <p class="big-quote">"Leadership is measured not only by institutions built, but by lives positively impacted."</p>
+          <p class="quote-attr">— Mohanlal Ghewarchand Bhandari</p>
+        </div>
+        <div class="legacy-values">
+          <div class="lv"><span class="lv-word">Integrity</span><span class="lv-sub">The Foundation</span></div>
+          <div class="lv"><span class="lv-word">Governance</span><span class="lv-sub">The Practice</span></div>
+          <div class="lv"><span class="lv-word">Stewardship</span><span class="lv-sub">The Commitment</span></div>
+          <div class="lv"><span class="lv-word">Purpose</span><span class="lv-sub">The Legacy</span></div>
+        </div>
+        <div style="margin-top: 2rem; border: 1px solid rgba(200,168,76,0.2); overflow:hidden;">
+          <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&q=80&w=600" style="width:100%; height:240px; object-fit:cover; filter:grayscale(20%)" alt="Corporate Session Capture">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="sec-grad"></div>
+  <div class="contact-inner">
+    <span class="section-label reveal" style="text-align:center">Get In Touch</span>
+    <h2 class="section-title reveal d1" style="text-align:center">Contact</h2>
+    <div class="section-rule reveal d2" style="margin:0 auto 2.5rem"></div>
+    <p class="contact-body reveal d3">To connect regarding senior governance advisory, organizational leadership platforms, or the philanthropic work of the ChandraMohan Foundation, please connect through our primary organizational portals.</p>
+    <div class="contact-links reveal d4">
+      <a href="https://www.mgbadvisors.com" target="_blank" class="contact-link">www.mgbadvisors.com</a>
+      <a href="https://www.chandramohanfoundation.org" target="_blank" class="contact-link">www.chandramohanfoundation.org</a>
+    </div>
+    <div class="contact-ctas reveal d5">
+      <a href="https://www.mgbadvisors.com" target="_blank" class="btn-primary btn-bronze">MGB Advisors</a>
+      <a href="https://www.chandramohanfoundation.org" target="_blank" class="btn-ghost">CMF Foundation</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div>
+    <div class="footer-brand">Mohanlal Ghewarchand Bhandari</div>
+    <div class="footer-sub">A Legacy of Leadership, Governance &amp; Service</div>
+  </div>
+  <div class="footer-right">
+    <div>© 2026 Mohanlal Ghewarchand Bhandari</div>
+    <div>Mumbai, India</div>
+  </div>
+</footer>
+
+<script>
+// Hamburger Menu Controller
+const ham = document.getElementById('hamburger');
+const mob = document.getElementById('mobileNav');
+ham.addEventListener('click', () => {
+  ham.classList.toggle('open');
+  mob.classList.toggle('open');
+  document.body.style.overflow = mob.classList.contains('open') ? 'hidden' : '';
+});
+document.querySelectorAll('.mob-link').forEach(l => l.addEventListener('click', () => {
+  ham.classList.remove('open');
+  mob.classList.remove('open');
+  document.body.style.overflow = '';
+}));
+
+// Scroll Reveal Controller
+const io = new IntersectionObserver(entries => {
+  entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+}, { threshold: 0.05 });
+document.querySelectorAll('.reveal,.reveal-left,.reveal-right,.tl-item').forEach(el => io.observe(el));
+
+// Fluid Number Counter Controller
+function countUp(el, target, suffix) {
+  let start = null;
+  const step = ts => {
+    if (!start) start = ts;
+    const p = Math.min((ts - start) / 1800, 1);
+    el.textContent = Math.floor(p * target) + suffix;
+    if (p < 1) requestAnimationFrame(step);
+  };
+  requestAnimationFrame(step);
+}
+const cio = new IntersectionObserver(entries => {
+  entries.forEach(e => {
+    if (e.isIntersecting && !e.target.dataset.counted) {
+      e.target.dataset.counted = '1';
+      const t = e.target.textContent;
+      const n = parseInt(t);
+      if (!isNaN(n)) countUp(e.target, n, t.includes('+') ? '+' : '');
+    }
+  });
+}, { threshold: 0.3 });
+document.querySelectorAll('.stat-num,.impact-num,.g-stat-num').forEach(el => cio.observe(el));
+
+// Active Link Navigation Highlighting
+const secs = document.querySelectorAll('section[id]');
+const links = document.querySelectorAll('.nav-links a');
+window.addEventListener('scroll', () => {
+  let cur = '';
+  secs.forEach(s => { if (window.scrollY >= s.offsetTop - 140) cur = s.id; });
+  links.forEach(a => { a.style.color = a.getAttribute('href') === '#' + cur ? 'var(--gold-light)' : ''; });
+}, { passive: true });
+</script>
+</body>
+</html>
