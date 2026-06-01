@@ -124,11 +124,13 @@ section{position:relative;overflow:hidden}
   position: relative;z-index: 2;
   display: flex;justify-content: center;align-items: center;
 }
+
+/* CORRECTED IMAGE FORMATTING (HERO) */
 .hero-portrait-circle {
   width: clamp(280px, 32vw, 420px);
   height: clamp(280px, 32vw, 420px);
   border-radius: 50%;
-  border: 1px solid var(--gold);
+  border: 2px solid var(--gold);
   overflow: hidden;
   background: var(--graphite);
   box-shadow: 0 25px 50px rgba(0,0,0,0.6);
@@ -136,7 +138,17 @@ section{position:relative;overflow:hidden}
   justify-content: center;
   align-items: center;
 }
-.hero-portrait-circle img {width:100%;height:100%;object-fit:cover;object-position:center 20%;transform:scale(1.05);}
+.hero-portrait-circle img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 50%;
+  display: block;
+  image-rendering: high-quality;
+  transform: translateZ(0); /* Hardware acceleration for smoother edges */
+}
+
 .hero-eyebrow{
   font-size:clamp(.72rem,1.8vw,.85rem);letter-spacing:.35em;
   text-transform:uppercase;color:var(--gold-light);margin-bottom:1.5rem;
@@ -265,9 +277,30 @@ section{position:relative;overflow:hidden}
 /* ── RECOGNITION ── */
 #recognition{background:var(--ivory);border-bottom:1px solid var(--ivory-mid)}
 .rec-layout{display:grid;grid-template-columns:1fr 1.2fr;gap:clamp(2rem,5vw,5rem);align-items:center}
-.rec-img-wrap{position:relative;display:flex;justify-content:center;}
-.rec-img-wrap::after{content:'';position:absolute;inset:12px;border:1px solid var(--gold);z-index:2;pointer-events:none}
-.rec-portrait{width:100%;height:460px;object-fit:cover;object-position:center 15%;transform:scale(1.02);filter:grayscale(5%);position:relative;z-index:1;box-shadow:0 20px 40px rgba(0,0,0,0.08)}
+
+/* CORRECTED IMAGE FORMATTING (RECOGNITION - CIRCLE) */
+.rec-img-wrap {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.rec-img-wrap::after {
+  display: none; /* Removed old square border */
+}
+.rec-portrait {
+  width: clamp(280px, 32vw, 420px);
+  height: clamp(280px, 32vw, 420px);
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+  border: 2px solid var(--gold);
+  display: block;
+  image-rendering: high-quality;
+  transform: translateZ(0); /* Hardware acceleration */
+}
+
 .award-badge{display:inline-block;padding:.5rem 1.2rem;background:var(--ivory-warm);border:1px solid var(--gold);font-size:.65rem;letter-spacing:.2em;text-transform:uppercase;color:var(--bronze);margin-bottom:1.5rem;font-weight:600}
 
 /* ── PROFESSIONAL ACHIEVEMENTS ── */
@@ -480,8 +513,8 @@ footer{
       </div>
       <div class="hero-image-frame">
         <div class="hero-portrait-circle">
-          <!-- AUTHENTIC PORTRAIT PROVIDED BY USER (HERO SPECIFIC) -->
-          <img src="mgb_1.png" alt="Mohanlal Ghewarchand Bhandari">
+          <!-- USING UPLOADED PNG FOR HERO -->
+          <img src="mgb_1.png" alt="CA Mohanlalji Bhandari Authentic Portrait">
         </div>
       </div>
     </div>
@@ -599,8 +632,8 @@ footer{
     <div class="rec-layout">
       <div class="reveal-left">
         <div class="rec-img-wrap">
-          <!-- AUTHENTIC PORTRAIT PROVIDED BY USER (RECOGNITION SPECIFIC) -->
-          <img src="mgb_2.png" class="rec-portrait" alt="Mohanlal Ghewarchand Bhandari Portrait">
+          <!-- USING UPLOADED PNG FOR RECOGNITION CIRCLE -->
+          <img src="mgb_2.png" class="rec-portrait" alt="CA Mohanlalji Bhandari Official Appearance Frame">
         </div>
       </div>
       <div class="reveal-right">
