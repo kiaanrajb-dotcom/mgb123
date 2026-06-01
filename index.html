@@ -151,43 +151,29 @@ section{position:relative;overflow:hidden}
 
 
 .hero-portrait-circle{
-
   width:clamp(280px,32vw,420px);
-
   height:clamp(280px,32vw,420px);
-
   border-radius:50%;
-
-  border:2px solid var(--gold);
-
   overflow:hidden;
-
   background:var(--graphite);
-
-  box-shadow:0 25px 50px rgba(0,0,0,0.6);
-
   display:flex;
-
   justify-content:center;
-
   align-items:center;
-
   flex-shrink:0;
 
+  border:1px solid rgba(201,168,76,0.35);
+  box-shadow:
+    0 0 0 6px rgba(201,168,76,0.08),
+    0 0 40px rgba(201,168,76,0.18),
+    0 25px 60px rgba(0,0,0,0.6);
 }
 
 .hero-portrait-circle img{
-
   width:100%;
-
   height:100%;
-
-  object-fit:cover;
-
-  object-position:center 18%;
-
   display:block;
-
+  object-fit:cover;
+  object-position:center;
 }
 
 
@@ -726,7 +712,7 @@ footer{background:var(--charcoal);padding:clamp(2.5rem,4vw,3.5rem) clamp(1.5rem,
 
         <div class="hero-portrait-circle">
 
-          <img src="data:image/jpeg;base64,""" + P1 + """" alt="CA Mohanlalji Bhandari">
+          <img src="mgb_1.jpg" alt="CA Mohanlalji Bhandari">
 
         </div>
 
@@ -948,7 +934,7 @@ footer{background:var(--charcoal);padding:clamp(2.5rem,4vw,3.5rem) clamp(1.5rem,
 
         <div class="rec-img-wrap">
 
-          <img src="data:image/jpeg;base64,""" + P2 + """" class="rec-portrait" alt="CA Mohanlalji Bhandari">
+          <img src="mgb_2.jpg" alt="CA Mohanlalji Bhandari">
 
         </div>
 
